@@ -1,0 +1,21 @@
+.forecastLabel {
+	margin: 0;
+}
+
+.forecastLabelSmall {
+	composes: forecastLabel;
+
+	font-size: 14px;
+}
+
+.forecastLabelMedium {
+	composes: forecastLabel;
+
+	font-size: 18px;
+}
+
+.forecastLabelBig {
+	composes: forecastLabel;
+	
+	font-size: 24px;
+}

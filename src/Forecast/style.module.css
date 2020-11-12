@@ -1,0 +1,68 @@
+.forecastWrapper {
+	position: absolute;
+
+	top: 50%;
+	left: 50%;
+
+	width: 75%;
+	padding: 20px;
+
+	background-color: #ffffff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+	border-radius: 10px;
+
+	transform: translate(-50%, -50%);
+	opacity: 1;
+
+	animation-name: forecastFadeIn;
+	animation-duration: 1s;
+}
+
+.forecastHeader {
+	padding: 0 0 20px;
+
+	text-align: center;
+
+	border-bottom: 1px solid #ccc;
+}
+
+.forecastContent {
+	padding: 20px 0;
+
+	font-size: 0;
+
+	border-bottom: 1px solid #ccc;
+}
+
+.forecastIcon {
+	max-width: 100%;
+}
+
+.forecastColumn {
+	display: inline-block;
+	vertical-align: middle;
+
+	width: 33.33%;
+
+	font-size: 14px;
+	text-align: center;
+}
+
+.forecastFooter {
+	padding: 20px 0 0;
+
+	text-align: center;
+	line-height: 1.6em;
+}
+
+@keyframes forecastFadeIn {
+	from {
+		top: 0;
+		opacity: 0;
+	}
+
+	to {
+		top: 50%;
+		opacity: 1;
+	}
+}
